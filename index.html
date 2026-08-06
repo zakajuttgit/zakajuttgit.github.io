@@ -43,13 +43,14 @@
         }
 
         .profile-img {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: top center; /* <--- THIS FIXES THE BLUR & CROPPING */
             border: 3px solid var(--accent);
             margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
         }
 
         header h1 {
