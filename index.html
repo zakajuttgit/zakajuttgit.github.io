@@ -47,7 +47,7 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            object-position: top center; /* <--- THIS FIXES THE BLUR & CROPPING */
+            object-position: top center;
             border: 3px solid var(--accent);
             margin-bottom: 20px;
             box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
@@ -119,7 +119,7 @@
         }
 
         /* Grid Layouts */
-        .skills-grid, .projects-grid {
+        .skills-grid, .projects-grid, .certs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
@@ -201,7 +201,7 @@
             <div class="card">
                 <div>
                     <h3>Backend & API Architecture</h3>
-                    <p>Enterprise PHP/Laravel workflows, dynamic RESTful Web APIs, microservices, and secure JWT/OAuth authentication systems[cite: 1].</p>
+                    <p>Enterprise PHP/Laravel workflows, dynamic RESTful Web APIs, microservices, and secure JWT/OAuth authentication systems.</p>
                 </div>
                 <div class="tags">
                     <span class="tag">PHP</span>
@@ -233,7 +233,42 @@
                     <span class="tag">Query Tuning</span>
                 </div>
             </div>
-            
+        </div>
+
+        <!-- Certifications Section -->
+        <h2 class="section-title">Certifications & Training</h2>
+        <div class="certs-grid">
+            <div class="card">
+                <div>
+                    <h3>Cyber Threats and Attack Vectors</h3>
+                    <p>University of Colorado System — Focused on identifying malicious threat intelligence, attack methodologies, and mitigation defenses.</p>
+                </div>
+                <div class="tags">
+                    <span class="tag">Threat Analysis</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Introduction to Cybersecurity for Business</h3>
+                    <p>University of Colorado System — Bridging technical security foundations with organizational risk strategy and management frameworks.</p>
+                </div>
+                <div class="tags">
+                    <span class="tag">Cyber Risk</span>
+                    <span class="tag">Business Security</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Introduction to DevOps</h3>
+                    <p>IBM — Covering modern deployment pipelines, automation practices, and infrastructure-as-code principles.</p>
+                </div>
+                <div class="tags">
+                    <span class="tag">DevOps</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Automation</span>
+                </div>
+            </div>
         </div>
 
         <!-- Projects Section -->
@@ -263,8 +298,8 @@
                     </div>
                 </div>
                 <a class="btn-link" href="https://alterazglobal.com" target="_blank">Visit Project ↗</a>
-
             </div>
+
             <div class="card">
                 <div>
                     <h3>ZentroRide</h3>
@@ -332,9 +367,6 @@
                 </div>
                 <a class="btn-link" href="http://baykeeims.com" target="_blank">Visit Project ↗</a>
             </div>
-
-            
-
         </div>
 
         <footer>
